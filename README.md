@@ -184,11 +184,17 @@ A aplicação estará disponível em: `http://localhost:8080`
 
 ## 🧪 Testando com Postman
 
+A collection com todas as requisições já está disponível no repositório, pronta para importar!
+
+### Importando a collection:
+
 1. Abra o **Postman**
-2. Crie uma nova **Collection** chamada `API Produtos`
-3. Adicione as requisições conforme a tabela de endpoints acima
-4. Configure a base URL como `http://localhost:8080`
-5. Para as requisições `POST` e `PUT`, selecione `Body > raw > JSON`
+2. Clique em **Import** no canto superior esquerdo
+3. Selecione o arquivo `apiestudos/postman/produtos-api.postman_collection.json`
+4. Clique em **Import**
+5. Todas as requisições já estarão configuradas ✅
+
+> ⚠️ Lembre-se de rodar a aplicação localmente antes de testar. A base URL é `http://localhost:8080`
 
 ---
 
