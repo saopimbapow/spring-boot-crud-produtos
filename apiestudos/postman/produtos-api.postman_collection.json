@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "4ed773ba-1354-423f-90d2-c6b974ab8a51",
+    "name": "produtos API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54516560",
+    "_collection_link": "https://go.postman.co/collection/54516560-4ed773ba-1354-423f-90d2-c6b974ab8a51?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "salvar",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \" pendrive\",\r\n    \"descricao\": \"bom dms\",\r\n    \"preco\": 560\r\n\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/produtos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "produtos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "atualizar",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \" mouse gamer\",\r\n    \"descricao\": \"bom dms\",\r\n    \"preco\": 490\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/produtos/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "produtos",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "3183eda7-e8d9-4d7c-b83e-63176d65854b"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "obter_por_id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"spider man ps4\",\r\n    \"descricao\": \"brabo\",\r\n    \"preco\": 300\r\n\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:8080/produtos/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "produtos",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "fc0f59d1-127b-4d69-9319-32de2c3c2f2e"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Busca",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"spider man ps4\",\r\n    \"descricao\": \"brabo\",\r\n    \"preco\": 300\r\n\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:8080/produtos?nome=pendrive",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "produtos"
+          ],
+          "query": [
+            {
+              "key": "nome",
+              "value": "pendrive"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deletar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"spider man ps4\",\r\n    \"descricao\": \"brabo\",\r\n    \"preco\": 300\r\n\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:8080/produtos/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "produtos",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "3183eda7-e8d9-4d7c-b83e-63176d65854b"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
